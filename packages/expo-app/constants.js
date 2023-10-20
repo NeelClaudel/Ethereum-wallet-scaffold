@@ -1,3 +1,4 @@
+//TODO: store in .env for production
 // MY INFURA_ID, SWAP IN YOURS FROM https://infura.io/dashboard/ethereum
 export const INFURA_ID = "";
 
