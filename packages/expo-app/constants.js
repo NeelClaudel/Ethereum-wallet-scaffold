@@ -57,7 +57,8 @@ export const NETWORKS = {
       name: "xDAI",
       symbol: "xDAI",
       decimals: 18,
-      logoURI: "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+      logoURI:
+        "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
     },
     gasPrice: 1000000000,
     rpcUrl: "https://rpc.gnosischain.com/",
@@ -72,7 +73,8 @@ export const NETWORKS = {
       name: "MATIC",
       symbol: "MATIC",
       decimals: 18,
-      logoURI: "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png",
+      logoURI:
+        "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png",
     },
     chainId: 137,
     rpcUrl: "https://polygon-rpc.com",
@@ -102,7 +104,8 @@ export const NETWORKS = {
       name: "MATIC",
       symbol: "MATIC",
       decimals: 18,
-      logoURI: "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png",
+      logoURI:
+        "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png",
     },
     chainId: 80001,
     gasPrice: 1000000000,
@@ -161,7 +164,7 @@ export const NETWORKS = {
   // },
 };
 
-export const NETWORK = chainId => {
+export const NETWORK = (chainId) => {
   for (const n in NETWORKS) {
     if (NETWORKS[n].chainId === chainId) {
       return NETWORKS[n];
@@ -170,32 +173,29 @@ export const NETWORK = chainId => {
 };
 export const NETWORK_IMAGES = {
   ethereum: require("./assets/eth.png"),
-  optimism:require("./assets/op.png"),
+  optimism: require("./assets/op.png"),
   arbitrum: require("./assets/arb.png"),
-  gnosis:require("./assets/gnosis.png"),
-  polygon:require("./assets/polygon.png"),
+  gnosis: require("./assets/gnosis.png"),
+  polygon: require("./assets/polygon.png"),
   goerli: require("./assets/goerli.png"),
   mumbai: require("./assets/mumbai.png"),
   zksyncTestnet: require("./assets/zksync.png"),
   buidlguidl: require("./assets/buidlguidl.png"),
   sepolia: require("./assets/sepolia.png"),
-}
-
+};
 
 export const DROPDOWN_NETWORK_OPTIONS = [];
 for (const id in NETWORKS) {
-  DROPDOWN_NETWORK_OPTIONS.push(
-    { label: NETWORKS[id].name, value: id }
-  );
+  DROPDOWN_NETWORK_OPTIONS.push({ label: NETWORKS[id].name, value: id });
 }
 
 // RPC Call Methods. From Rainbow https://github.com/rainbow-me/rainbow/blob/develop/src/utils/signingMethods.ts
-export const SEND_TRANSACTION = 'eth_sendTransaction';
-export const PERSONAL_SIGN = 'personal_sign';
-export const SIGN = 'eth_sign';
-export const SIGN_TRANSACTION = 'eth_signTransaction';
-export const SIGN_TYPED_DATA = 'eth_signTypedData';
-export const SIGN_TYPED_DATA_V4 = 'eth_signTypedData_v4';
+export const SEND_TRANSACTION = "eth_sendTransaction";
+export const PERSONAL_SIGN = "personal_sign";
+export const SIGN = "eth_sign";
+export const SIGN_TRANSACTION = "eth_signTransaction";
+export const SIGN_TYPED_DATA = "eth_signTypedData";
+export const SIGN_TYPED_DATA_V4 = "eth_signTypedData_v4";
 export const isChainIdHistoryBlocked = (chainId) => {
-  return chainId === 280 || chainId === 80216
+  return chainId === 280 || chainId === 80216;
 };
