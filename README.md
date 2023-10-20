@@ -8,7 +8,6 @@
 <img width="150px" alt="image" src="./appImages/screenshot4.jpeg" >
 <img width="150px" alt="image" src="./appImages/screenshot5.jpeg" >
 
-
 ## Overview
 
 This repo is meant to be a open-source code base for building out Ethereum Wallets with Scaffold-Eth and React Native.
@@ -76,15 +75,3 @@ Alternatively, to test on an iOS device (requires Apple Developer Account) open 
 🌍 You need an RPC key for testnets and production deployments, create an [Alchemy](https://www.alchemy.com/) account and replace the value of `ALCHEMY_KEY = xxx` in `packages/react-app/src/constants.js` with your new key.
 
 📣 Make sure you update the `InfuraID` before you go to production. Huge thanks to [Infura](https://infura.io/) for our special account that fields 7m req/day!
-
-# 🏃💨 Speedrun Ethereum
-
-Register as a builder [here](https://speedrunethereum.com) and start on some of the challenges and build a portfolio.
-
-# 💬 Support Chat
-
-Join the telegram [support chat 💬](https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA) to ask questions and find others building with 🏗 scaffold-eth!
-
----
-
-🙏 Please check out our [Gitcoin grant](https://gitcoin.co/grants/2851/scaffold-eth) too!
